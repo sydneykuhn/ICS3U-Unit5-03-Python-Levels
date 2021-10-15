@@ -49,9 +49,14 @@ def main():
     level_from_user = input("Enter a level you want converted to a percentage : ")
     # call function
     calculated_mark = calculate_mark(level_from_user)
-    print(
-        "Level {0} has a middle percentage of {1}.".format(
-            level_from_user, calculated_mark))
+    if calculated_mark == -1:
+        print("Invalid level entered, please try again.")
+    else:
+        print(
+            "Level {0} has a middle percentage of {1}.".format(
+                level_from_user, calculated_mark
+            )
+        )
 
     print("\nDone.")
 
