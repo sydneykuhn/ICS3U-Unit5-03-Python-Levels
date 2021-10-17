@@ -10,31 +10,31 @@ def calculate_mark(level):
 
     # process
     if level == "4+":
-        mark = "98%"
+        mark = 98
     elif level == "4":
-        mark = "91%"
+        mark = 91
     elif level == "4-":
-        mark = "83%"
+        mark = 83
     elif level == "3+":
-        mark = "78%"
+        mark = 78
     elif level == "3":
-        mark = "75%"
+        mark = 75
     elif level == "3-":
-        mark = "71%"
+        mark = 71
     elif level == "2+":
-        mark = "68%"
+        mark = 68
     elif level == "2":
-        mark = "65%"
+        mark = 65
     elif level == "2-":
-        mark = "61%"
+        mark = 61
     elif level == "1+":
-        mark = "58%"
+        mark = 58
     elif level == "1":
-        mark = "55%"
+        mark = 55
     elif level == "1-":
-        mark = "51%"
+        mark = 51
     elif level == "R":
-        mark = "25%"
+        mark = 25
     else:
         mark = -1
 
@@ -53,7 +53,7 @@ def main():
         print("Invalid level entered, please try again.")
     else:
         print(
-            "Level {0} has a middle percentage of {1}.".format(
+            "Level {0} has a middle percentage of {1}%.".format(
                 level_from_user, calculated_mark
             )
         )
